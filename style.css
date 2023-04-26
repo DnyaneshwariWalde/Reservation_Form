@@ -1,0 +1,427 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f9f9f9;
+}
+
+/* Navigation bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+}
+
+.logo a {
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #e67e22;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background-color: #fff;
+        width: 100%;
+        flex-direction: column;
+        display: none;
+    }
+
+    .nav-links li {
+        margin: 0;
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .nav-links a {
+        color: #333;
+    }
+
+    .nav-links a:hover {
+        color: #e67e22;
+    }
+
+    .burger {
+        display: block;
+    }
+}
+
+/* Hero section */
+.hero {
+    /* background-image: url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"); */
+    background-image: url("https://media.istockphoto.com/id/660196744/photo/restaurant-chilling-out-classy-lifestyle-reserved-concept.jpg?b=1&s=170667a&w=0&k=20&c=4xvmRJ4jFLKB1St9KGVzrISLQYYPKv1ckI6BTG1q1I8=");
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+    color: #fff;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Booking form */
+.booking {
+    padding: 50px 0;
+    /* background-color: #ffeded; */
+    background-color: #eec48b;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+input,
+textarea {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+    display: inline-block;
+    background-color: #e67e22;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    /* Add some additional styles to make the button look more appealing */
+    border: none;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background-color: #46d300;
+}
+.btn1 {
+    display: inline-block;
+    background-color: #e67e22;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Large screens */
+@media only screen and (min-width: 1024px) {
+
+    body {
+        font-size: 18px;
+    }
+
+    .hero {
+        height: 400px;
+    }
+
+    .container {
+        max-width: 1000px;
+    }
+}
+
+/* Medium screens */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .hero {
+        height: 150px;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    .logo a {
+        font-size: 20px;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+        top: auto;
+        left: auto;
+        background-color: transparent;
+        width: auto;
+        display: flex !important;
+    }
+
+    .nav-links li {
+        margin: 0 10px;
+        padding: 0;
+        width: auto;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .booking {
+        padding: 50px 0;
+    }
+
+    h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-size: 18px;
+    }
+
+    input,
+    textarea {
+        font-size: 16px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+
+/* Small screens */
+@media only screen and (max-width: 767px) {
+
+    .hero {
+        height: 5%;
+    }
+    h1{
+        margin-top: 30px;
+        font-size: 10px;
+    }
+
+    nav {
+        padding: 5px;
+    }
+
+    .logo a {
+        font-size: 24px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        position: static;
+        top: auto;
+        left: auto;
+        background-color: transparent;
+        width: 100%;
+        display: none;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    /* Adjust booking form */
+    .booking {
+        padding: 20px 0;
+    }
+
+    h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    input,
+    textarea {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+/* Mobile devices */
+@media screen and (max-width: 480px) {
+
+    .hero {
+        height: 5%;
+    }
+    h1{
+        margin-top: 30px;
+        font-size: 10px;
+    }
+
+    nav {
+        padding: 5px;
+    }
+
+    .logo a {
+        font-size: 24px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        position: static;
+        top: auto;
+        left: auto;
+        background-color: transparent;
+        width: 100%;
+        display: none;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .booking {
+        padding: 20px 0;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    input,
+    textarea {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
