@@ -13,7 +13,7 @@ You can see a live preview of the Restaurant Booking Form by visiting [here](htt
 1. Clone the repository to your local machine:
 
    ```
-   git clone https://github.com/your_username/restaurant-booking-form.git
+   git clone https://github.com/DnyaneshwariWalde/Reservation_Form.git
    
    ```
 
