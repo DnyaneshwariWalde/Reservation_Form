@@ -6,7 +6,7 @@ This is a simple restaurant booking form built using HTML, CSS, and JavaScript. 
 
 ## Preview
 
-You can see a live preview of the Restaurant Booking Form by visiting [here]().
+You can see a live preview of the Restaurant Booking Form by visiting [here](https://dnyaneshwariwalde.github.io/Reservation_Form/).
 
 ## How to Use
 
